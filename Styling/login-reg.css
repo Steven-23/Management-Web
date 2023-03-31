@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #1B262C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    position: absolute;
+    right: 0;
+    opacity: 0.3;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.topside{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login, .Register{
+    display: flex;
+    border-radius: 3%;
+    height: 500px;
+    width: 400px;
+    align-items: center;
+    background-color: #f1f1f1;
+    z-index: 1;
+    flex-direction: column;
+    box-shadow: 0 5px 5px rgba(31, 31, 32, 0.3);
+}
+
+.Register{
+    height: 800px;
+}
+
+.form1{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input{
+    display: flex;
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 2px rgba(31, 31, 32, 0.1);
+}
+
+#submit{
+    width: 100px;
+    justify-content: center;
+    background-color: #3282B8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.line b{
+    font-weight: lighter;
+    color: #1B262C;
+}
+
+.line hr{
+    width: 150px;
+    height: 0px;
+    border: 1px solid #1B262C;
+}
+
+.formside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-ask{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-ask button{
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.buttonr{
+    display: flex;
+    justify-content: center;
+}
+
+.register-ask h1{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#message1{
+    display: flex;
+    color: red;
+}
+
+.output{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+/* Phone size */
+@media only screen and (max-width: 415px) {
+    .login{
+        width: 300px;
+    }
+
+    *{
+        font-size: 10px;
+    }
+
+    .line hr{
+        width: 120px;
+        height: 0px;
+        border: 1px solid #1B262C;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    input{
+        width: 200px;
+    }
+
+    .Register{
+        width: 300px;
+    }
+}

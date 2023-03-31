@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styling/style.css">
+    <script src="../Script/script.js"></script>
+    <title>Aplikasi Properti - View User</title>
+</head>
+<body onload="return showData1(), homepages()">
+    <div class="header">
+        <div class="left-header">
+            <h1>Sekolah Sistem Informasi</h1>
+        </div>
+        <div class="right-header">
+            <div class="username-section">
+                <a href="../Profile/index.html"><img src="../Assets/profilelogo.jpg" id="profilelogo" alt=""></a>
+                <h3 id="u-name">username</h3>
+                <a href="../Profile/index.html"><img src="../Assets/down.png" id="down-profile" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="left-nav">
+        <div class="nav-category">
+            <div class="nav-category-list">
+                <a href="../Homepage/index.html">
+                    <img src="../Assets/dashboard.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>Dashboard</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../ManagementData/index.html">
+                    <img src="../Assets/management.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>Management My Data</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../ViewUser/index.html">
+                    <img src="../Assets/viewcom.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>View User</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../ViewProperty/index.html">
+                    <img src="../Assets/viewcom.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>View Property</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../Manage Favorite/index.html">
+                    <img src="../Assets/favorites.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>View Favorite</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../News/index.html">
+                    <img src="../Assets/news.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>Property News</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../Feedback/index.html">
+                    <img src="../Assets/feedback.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>Feedback</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../Profile/index.html">
+                    <img src="../Assets/profile-nav.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>Profile</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-content">
+        <div class="m-content-container">
+            <h1>View User</h1>
+            <div class="management-header">
+                <img src="../Assets/management-user.png" alt="" id="img-management">
+                <b>User Information</b>
+            </div>
+            <div class="table-container">
+                <div class="table-1">
+                    <table id="table" border="1">
+                        <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table-form">
+                    <form action="" id="form-management">
+                        <h1 id="m-text1">User Detail</h1>
+                        <div class="form2">
+                            <label for="no1">No</label>
+                            <input type="text" name="no1" id="no1" placeholder=" Number" readonly>
+                        </div>
+                        <div class="form2">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="name" id="name" placeholder=" Full Name" readonly>
+                        </div>
+                        <div class="form2">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" placeholder=" Active Email" readonly>
+                        </div>
+                        <div class="form2">
+                            <label for="pn">Phone</label>
+                            <input type="text" name="pn" id="pn" placeholder=" Phone Number" readonly>
+                        </div>
+
+                        <div class="output-management">
+                            <div id="message2"></div>
+                        </div>
+
+                        <div class="note-reminder">
+                            <h4>Note:</h4>
+                            <p>- All data is displayed from LocalStorage</p>
+                            <p>- If there are no user, try register more!</p>
+                            <p>- You can't edit this page</p>    
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styling/login-reg.css">
+    <title>Aplikasi Properti - Login</title>
+    <script src="../Script/script.js"></script>
+</head>
+<body>
+    <img src="../Assets/background-connect.png" alt="">
+
+    <div class="box">
+        <div class="login">
+            <div class="topside">
+                <h2>Login</h2>
+            </div>
+            <div class="formside">
+                <form action="" name="login-form" onsubmit="return login()">
+                    <div class="form1">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="  Input Email Here">
+                    </div>
+                    <div class="form1">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" placeholder="  Input Password Here">
+                    </div>
+                    <input type="submit" value="Login" id="submit">
+                </form>
+
+                <div class="output">
+                    <div id="message1"></div>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="line">
+                    <hr>
+                    <b>or</b>
+                    <hr>
+                </div>
+                
+                <div class="register-ask">
+                    <h1>You Dont have account?</h1>
+                    <h1>Register Now!</h1>
+                    <div class="buttonr">
+                        <a id="buttonRegister" href="../Register/index.html"><button>Register</button></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

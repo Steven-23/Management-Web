@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styling/style.css">
+    <script src="../Script/script.js" defer></script>
+    <title>Aplikasi Properti - Profile</title>
+</head>
+<body onload="return homepages(), homePagesDetail(), totalUserSet(), totalPropertiAll(), totalPropertiSet(), totalFavoriteAll()">
+    <div class="header">
+        <div class="left-header">
+            <h1>Sekolah Sistem Informasi</h1>
+        </div>
+        <div class="right-header">
+            <div class="username-section">
+                <a href="../Profile/index.html"><img src="../Assets/profilelogo.jpg" id="profilelogo" alt=""></a>
+                <h3 id="u-name">username</h3>
+                <a href="../Profile/index.html"><img src="../Assets/down.png" id="down-profile" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="left-nav">
+        <div class="nav-category">
+            <div class="nav-category-list">
+                <a href="../Homepage/index.html">
+                    <img src="../Assets/dashboard.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>Dashboard</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../ManagementData/index.html">
+                    <img src="../Assets/management.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>Management My Data</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../ViewUser/index.html">
+                    <img src="../Assets/viewcom.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>View User</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../ViewProperty/index.html">
+                    <img src="../Assets/viewcom.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>View Property</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../Manage Favorite/index.html">
+                    <img src="../Assets/favorites.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>View Favorite</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../News/index.html">
+                    <img src="../Assets/news.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>Property News</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../Feedback/index.html">
+                    <img src="../Assets/feedback.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>Feedback</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-category-list">
+                <a href="../Profile/index.html">
+                    <img src="../Assets/profile-nav.png" id="nav-logo" alt="">
+                    <div class="nav-list-content">
+                        <h3>Profile</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-dashboard">
+        <div class="content-dashboard-list">
+            <h1>Feedback</h1>
+
+            <div class="header-dashboard-2">
+                <img src="../Assets/feedback.png" alt="">
+                <b>Feedback Form</b>
+            </div>
+
+            <div class="dashboard-2-layer">
+               <form action="" class="feedback-forms" onsubmit="feedback()">
+                    <h3>Whats on your mind? feel free to write it here!</h3>
+                    <div class="form-feed">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" placeholder="  Input Title" required>
+                    </div>
+                    <div class="form-feed">
+                        <label for="desc">Description</label>
+                        <input type="text" name="desc" id="desc" placeholder="  Input Description" required>
+                    </div>
+                    <div class="form-feed">
+                        <input type="submit" value="Submit" onsubmit="feedback()">
+                    </div>
+               </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

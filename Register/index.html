@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styling/login-reg.css">
+    <title>Aplikasi Properti - Register</title>
+    <script src="../Script/script.js"></script>
+</head>
+<body>
+    <img src="../Assets/background-connect.png" alt="">
+
+    <div class="box">
+        <div class="Register">
+            <div class="topside">
+                <h2>Register</h2>
+            </div>
+            <div class="formside">
+                <form action="" name="register-form" onsubmit="return register()">
+                    <div class="form1">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="  Input Name Here">
+                    </div>
+                    <div class="form1">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="  Input Email Here">
+                    </div>
+                    <div class="form1">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" placeholder="  Input Address Here">
+                    </div>
+                    <div class="form1">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="dob">
+                    </div>
+                    <div class="form1">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" placeholder="  Input Phone Number Here">
+                    </div>
+                    <div class="form1">
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" placeholder="  Input Password Here">
+                    </div>
+                    <input type="submit" value="Register" id="submit">
+                </form>
+                
+                <div class="output">
+                    <div id="message1"></div>
+                    <br>
+                </div>
+
+                <div class="line">
+                    <hr>
+                    <b>or</b>
+                    <hr>
+                </div>
+                
+                <div class="register-ask">
+                    <h1>You have account?</h1>
+                    <h1>Login Now!</h1>
+                    <div class="buttonr">
+                        <a href="../Login/index.html"><button>Login</button></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
